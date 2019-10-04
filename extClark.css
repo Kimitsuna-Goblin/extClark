@@ -1,0 +1,1466 @@
+/*!
+ *	Copyright (C) 2019 ＧＯＢ
+ *	Released under the MIT license.
+ *	see https://opensource.org/licenses/MIT/
+ */
+
+/**
+ *	@file		extClark.css
+ *	@brief		小児薬用量計算ツール (拡張Clark式) 用スタイルシート
+ *	@version	0.91
+ */
+
+/* 画面サイズは最小 375px×612px (縦組)、524px×454px (横組) まで対応 */
+/* デスクトップファーストでごめんなさい */
+
+/**
+ *	PC用標準画面 (横組)
+ *	@width	734px～
+ *	@height	576px～
+ */
+
+/* 全体構造 */
+BODY
+{
+	background-color: #ccffcc;
+	color: #333333;
+	font-size: 12pt;
+}
+
+H1
+{
+	color: #ff3300;
+	font-family: sans-serif;
+	font-size: 24pt;
+}
+
+.outerframe
+{
+	display: block;
+
+	clear: left;
+	float: none;
+
+	margin: 0;
+	padding: 0;
+}
+
+.outer-1
+{
+	width: 718px;
+	height: 522px;
+	background-color: #663300;		/* 外枠の背景色と枠線は同じ色にする */
+	border-top: 1px solid #663300;	/*	(ブラウザの拡大・縮小でテーブルの間に隙間が生じたとき、隙間が枠線の色で埋まるようにするため) */
+	border-left: 1px solid #663300;
+	border-right: 0;				/* ズーム時に子要素がはみ出て表示できなくなるのを回避するため、右側と下側は border にしない */
+	border-bottom: 0;
+	border-collapse: separate;		/* 外枠は確実に 1px 分の枠線を引くために separate とする */
+	border-spacing: 0;
+	box-sizing: border-box;
+}
+
+.outer-2
+{
+	width: 718px;
+	background-color: transparent;
+	border: 0;
+	box-sizing: border-box;
+	text-align: right;
+	padding: 5px 0 2px 0;
+}
+
+DIV.block
+{
+	display: block;
+
+	border: 0;
+	border-collapse: collapse;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+/* テーブル書式 */
+TABLE
+{
+	border: 0;
+	border-collapse: collapse;	/* separate よりも collapse の方が、ズーム時にセル間の境界線が消えにくい */
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+TH
+{
+	width: 92px;
+	border-top: 0;
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 1px solid #663300;
+	border-collapse: collapse;
+	box-sizing: border-box;
+	background-color: #fcdcbc;
+	color: #000033;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+TD
+{
+	border: 0;
+	border-collapse: collapse;
+	box-sizing: border-box;
+	background-color: #fcfcfc;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.table-A
+{
+	clear: none;
+	float: left;
+
+	width: 716px;
+	height: 79px;
+	border-bottom: 2px solid #663300;
+}
+
+.th-A1
+{
+	border-bottom: 1px solid #663300;
+}
+
+.td-A1
+{
+	width: 234.5px;	/* テーブルAのセル間と、テーブルBC間の border の位置をぴったり揃えるために、幅を 0.5px 小さくする */
+	border-bottom: 1px solid #663300;
+}
+
+.td-A2
+{
+	border-bottom: 1px solid #663300;
+}
+
+.td-A3
+{
+	border-left: 1px solid #663300;
+}
+
+.block-B
+{
+	clear: left;
+	float: left;
+
+	width: 326px;
+	height: 442px;	/* 441pxでは、ズーム時にはみ出ることがある */
+}
+
+.table-B1
+{
+	clear: none;
+	float: none;
+
+	width: 326px;
+	height: 221px;
+	border-bottom: 1px solid #663300;
+}
+
+.table-B2
+{
+	clear: none;
+	float: none;
+
+	width: 326px;
+	height: 220px;
+}
+
+.table-C
+{
+	clear: none;
+	float: left;
+
+	width: 390px;
+	height: 441px;
+	border-left: 1px solid #663300;
+}
+
+.tr-C1
+{
+	height: 54px;
+}
+
+.tr-C2
+{
+	border-top: 1px solid #663300;
+	border-bottom: 1px solid #663300;
+}
+
+.tr-C3
+{
+	height: 80px;
+}
+
+/* 計算機部分の書式 */
+.calculator-outerframe
+{
+	padding: 0;
+}
+
+.calculator
+{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	vertical-align: middle;
+}
+
+TABLE.calculator
+{
+	margin: 0 auto;
+}
+
+DIV.func1
+{
+	margin: 0 3px 12px 0;
+	padding: 10px 0 0 0;
+}
+
+DIV.func2
+{
+	margin: 8px 0 10px 3px;
+	padding: 0;
+}
+
+DIV.func3
+{
+	margin: 6px 0 0 3px;
+	padding: 0;
+}
+
+DIV.funcMini
+{
+	margin: 0 0 6px 3px;
+	padding: 0;
+}
+
+DIV.num
+{
+	clear: left;
+	float: none;
+
+	margin: 0;
+	padding: 0;
+}
+
+INPUT.func1
+{
+	display: block;
+
+	width: 72px;
+	height: 120px;
+	margin: 0;
+	padding: 0;
+}
+
+INPUT.func2
+{
+	display: block;
+
+	width: 72px;
+	height: 108px;
+	margin: 0;
+	padding: 0;
+}
+
+INPUT.func3
+{
+	display: block;
+
+	width: 72px;
+	height: 72px;
+	margin: 0;
+	padding: 0;
+}
+
+INPUT.funcMini
+{
+	display: block;
+
+	width: 72px;
+	height: 48px;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+INPUT.num
+{
+	display: block;
+
+	clear: none;
+	float: left;
+
+	width: 60px;
+	height: 60px;
+	margin: 6px 5px;
+	padding: 0;
+}
+
+.last-button
+{
+	margin-bottom: 0 !important;
+}
+
+/* その他の書式 */
+INPUT
+{
+	font-family: inherit;
+	font-size: 12pt;
+}
+
+INPUT.value
+{
+	width: 144px;
+	text-align: right;
+	margin: 0;
+}
+
+INPUT.value-short
+{
+	width: 80px;
+	text-align: right;
+	margin: 0;
+}
+
+INPUT.unit
+{
+	width: 72px;
+	text-align: left;
+}
+
+SELECT
+{
+	font-family: inherit;
+	font-size: 11pt;
+	margin: 0;
+}
+
+.hold
+{
+	margin: 0;
+	padding: 0;
+}
+
+.radios
+{
+	text-align: left;
+	margin: 0;
+	padding: 0 0 0 6px;
+}
+
+.unit
+{
+	margin: 0;
+}
+
+.wideline
+{
+	/**
+	 * wideline は用量単位ラジオボタンとその直下の桁数リストボックスの間隔を広げて
+	 * タッチで操作しやすくするために設けている
+	 */
+	line-height: 2.4;
+}
+
+/**
+ *	PC用・やや小さめ (横組)
+ *	@width	700px～734px
+ *	@height	576px～780px
+ */
+@media	( max-width: 734px )
+{
+	/* 横組の基本骨格 */
+	.table-B1
+	{
+		clear: none;
+		float: none;
+		border-bottom: 1px solid #663300;
+	}
+
+	.table-B2
+	{
+		clear: none;
+		float: none;
+		border-bottom: 0;
+		border-left: 0;
+	}
+
+	.table-C
+	{
+		clear: none;
+		float: left;
+		border-left: 1px solid #663300;
+	}
+
+	/* 全体構造 */
+	.outer-1, .outer-2
+	{
+		width: 684px;
+	}
+
+	/* テーブル書式 */
+	TH
+	{
+		width: 58px;
+	}
+
+	.table-A
+	{
+		width: 682px;
+	}
+
+	.block-B, .table-B1, .table-B2
+	{
+		width: 292px;
+	}
+}
+
+/**
+ *	モバイル用中画面 (縦組)
+ *	@width	756px～
+ *	@height	940px～ (大画面が表示可能であれば、大画面を優先する)
+ */
+@media	( min-height: 940px )
+{
+	/* 縦組の基本骨格 */
+	.table-B1
+	{
+		clear: none;
+		float: left;
+		border-bottom: 2px solid #663300;
+	}
+
+	.table-B2
+	{
+		clear: none;
+		float: left;
+		border-bottom: 2px solid #663300;
+		border-left: 1px solid #663300;
+	}
+
+	.table-C
+	{
+		clear: left;
+		float: none;
+		border-left: 0;
+	}
+
+	/* 全体構造 */
+	.outer-1
+	{
+		width: 740px;
+		height: 882px;
+	}
+
+	.outer-2
+	{
+		width: 740px;
+	}
+
+	.table-A
+	{
+		width: 738px;
+		height: 120px;
+	}
+
+	.td-A1
+	{
+		width: 269.5px;
+	}
+
+	.block-B
+	{
+		width: 739px;	/* 738pxでは、ズーム時にはみ出ることがある */
+		height: 120px;
+	}
+
+	.table-B1, .table-B2
+	{
+		width: 369px;
+		height: 120px;
+	}
+
+	.table-C
+	{
+		width: 738px;
+		height: 640px;
+	}
+
+	.tr-C1
+	{
+		height: 56px;
+	}
+
+	.tr-C3
+	{
+		height: 120px;
+	}
+
+	/* テーブル書式 */
+	TH
+	{
+		font-size: 15pt;
+		width: 100px;
+	}
+
+	/* 計算機部分の書式 */
+	DIV.func1
+	{
+		margin: 0 6px 12px 0;
+		padding: 12px 0 0 0;
+	}
+
+	DIV.func2
+	{
+		margin: 12px 0 0 6px;
+	}
+
+	DIV.func3
+	{
+		margin: 8px 0 0 6px;
+	}
+
+	DIV.funcMini
+	{
+		margin: 0 0 8px 6px;
+	}
+
+	INPUT.func1
+	{
+		width: 108px;
+		height: 180px;
+	}
+
+	INPUT.func2
+	{
+		width: 108px;
+		height: 162px;
+	}
+
+	INPUT.func3
+	{
+		width: 108px;
+		height: 108px;
+	}
+
+	INPUT.funcMini
+	{
+		width: 108px;
+		height: 72px;
+	}
+
+	INPUT.num
+	{
+		width: 80px;
+		height: 80px;
+		margin: 12px 14px;
+	}
+
+	/* その他の書式 */
+	INPUT, LABEL, .hold, .subhead, .unit
+	{
+		font-size: 15pt;
+	}
+
+	INPUT.value
+	{
+		width: 172px;
+	}
+
+	SELECT
+	{
+		font-size: 14pt;
+	}
+}
+
+/**
+ *	モバイル用大画面 (縦組)
+ *	@width	872px～
+ *	@height	974px～
+ */
+@media	( min-width: 872px ) and ( min-height: 974px )
+{
+	/* 縦組の基本骨格 */
+	.table-B1
+	{
+		clear: none;
+		float: left;
+		border-bottom: 2px solid #663300;
+	}
+
+	.table-B2
+	{
+		clear: none;
+		float: left;
+		border-bottom: 2px solid #663300;
+		border-left: 1px solid #663300;
+	}
+
+	.table-C
+	{
+		clear: left;
+		float: none;
+		border-left: 0;
+	}
+
+	/* 全体構造 */
+	.outer-1
+	{
+		width: 856px;
+		height: 912px;
+	}
+
+	.outer-2
+	{
+		width: 856px;
+	}
+
+	/* テーブル書式 */
+	TH
+	{
+		font-size: 18pt;
+		width: 120px;
+	}
+
+	.table-A
+	{
+		width: 854px;
+	}
+
+	.td-A1
+	{
+		width: 307.5px;
+	}
+
+	.block-B
+	{
+		width: 855px;
+		height: 128px;
+	}
+
+	.table-B1, .table-B2
+	{
+		width: 427px;
+		height: 128px;
+	}
+
+	.table-C
+	{
+		width: 854px;
+		height: 662px;
+	}
+
+	.tr-C1
+	{
+		height: 68px;
+	}
+
+	.tr-C3
+	{
+		height: 124px;
+	}
+
+	/* 計算機部分の書式 */
+	DIV.func1
+	{
+		margin: 4px 16px 18px 0;
+		padding: 16px 0 0 0;
+	}
+
+	DIV.func2
+	{
+		margin: 12px 0 12px 16px;
+	}
+
+	DIV.func3
+	{
+		margin: 0 0 8px 16px;
+	}
+
+	DIV.funcMini
+	{
+		margin: 0 0 8px 16px;
+	}
+
+	INPUT.num
+	{
+		margin: 14px 16px;
+	}
+
+	/* その他の書式 */
+	INPUT, LABEL, .hold, .unit
+	{
+		font-size: 18pt;
+	}
+
+	INPUT.value
+	{
+		width: 208px;
+	}
+
+	SELECT, .subhead
+	{
+		font-size: 16pt;
+	}
+}
+
+/**
+ *	モバイル用小画面 (縦組)
+ *	@width	672px～756px
+ *	@height	676px～ (width: 672px～700px), 780px～ (width: 700px～756px)
+ *	@attention	高さ 780px以下 では、縦方向をコンパクトにしないと表示できないので、横組を優先する
+ */
+@media	( max-width: 756px ) and ( min-height: 780px ),
+		( max-width: 700px )
+{
+	/* 縦組の基本骨格 */
+	.table-B1
+	{
+		clear: none;
+		float: left;
+		border-bottom: 2px solid #663300;
+	}
+
+	.table-B2
+	{
+		clear: none;
+		float: left;
+		border-bottom: 2px solid #663300;
+		border-left: 1px solid #663300;
+	}
+
+	.table-C
+	{
+		clear: left;
+		float: none;
+		border-left: 0;
+	}
+
+	/* 全体構造 */
+	.outer-1
+	{
+		width: 656px;
+		height: 622px;
+	}
+
+	.outer-2
+	{
+		width: 656px;
+	}
+
+	/* テーブル書式 */
+	TH
+	{
+		width: 92px;
+		font-size: 12pt;
+	}
+
+	.table-A
+	{
+		width: 654px;
+		height: 79px;
+	}
+
+	.td-A1
+	{
+		width: 235.5px;
+	}
+
+	.block-B
+	{
+		width: 655px;
+		height: 92px;
+	}
+
+	.table-B1, .table-B2
+	{
+		width: 327px;
+		height: 92px;
+	}
+
+	.table-C
+	{
+		width: 654px;
+		height: 449px;
+	}
+
+	.tr-C1
+	{
+		height: 56px;
+	}
+
+	.tr-C3
+	{
+		height: 80px;
+	}
+
+	/* 計算機部分の書式 */
+	DIV.func1
+	{
+		margin: 0 8px 12px 0;
+		padding: 10px 0 0 0;
+	}
+
+	DIV.func2
+	{
+		margin: 8px 0 10px 8px;
+	}
+
+	DIV.func3
+	{
+		margin: 6px 0 0 8px;
+	}
+
+	DIV.funcMini
+	{
+		margin: 0 0 6px 8px;
+	}
+
+	INPUT.func1
+	{
+		width: 72px;
+		height: 120px;
+	}
+
+	INPUT.func2
+	{
+		width: 72px;
+		height: 108px;
+	}
+
+	INPUT.func3
+	{
+		width: 72px;
+		height: 72px;
+	}
+
+	INPUT.funcMini
+	{
+		width: 72px;
+		height: 48px;
+	}
+
+	INPUT.num
+	{
+		width: 60px;
+		height: 60px;
+		margin: 6px 7px;
+	}
+
+	/* その他の書式 */
+	INPUT, LABEL, .hold, .subhead, .unit
+	{
+		font-size: 12pt;
+	}
+
+	INPUT.value
+	{
+		width: 144px;
+	}
+
+	SELECT
+	{
+		font-size: 11pt;
+	}
+}
+
+/**
+ *	モバイル・PC兼用小画面 (縦組)
+ *	@width	556px～700px
+ *	@height	676px以下 (width: 672px～700px)
+ */
+@media	( max-width: 672px ),
+		( max-width: 700px ) and ( max-height: 676px )
+{
+	/* 縦組の基本骨格 */
+	.table-B1
+	{
+		clear: none;
+		float: left;
+		border-bottom: 2px solid #663300;
+	}
+
+	.table-B2
+	{
+		clear: none;
+		float: left;
+		border-bottom: 2px solid #663300;
+		border-left: 1px solid #663300;
+	}
+
+	.table-C
+	{
+		clear: left;
+		float: none;
+		border-left: 0;
+	}
+
+	/* 全体構造 */
+	.omissible
+	{
+		display: none;
+	}
+
+	.outer-1
+	{
+		width: 540px;
+		height: 584px;
+	}
+
+	.outer-2
+	{
+		width: 540px;
+	}
+
+	/* テーブル書式 */
+	TH
+	{
+		width: 68px;
+	}
+
+	.table-A
+	{
+		width: 538px;
+		height: 63px;
+	}
+
+	.td-A1
+	{
+		width: 201.5px;
+	}
+
+	.block-B
+	{
+		width: 539px;
+		height: 82px;
+	}
+
+	.table-B1, .table-B2
+	{
+		width: 269px;
+		height: 82px;
+	}
+
+	.table-C
+	{
+		width: 538px;
+		height: 437px;
+	}
+
+	.tr-C1
+	{
+		height: 52px;
+	}
+
+	/* 計算機部分の書式 */
+	DIV.func1
+	{
+		margin: 0 8px 12px 0;
+		padding: 12px 0 0 0;
+	}
+
+	DIV.func2
+	{
+		margin: 8px 0 10px 8px;
+	}
+
+	DIV.func3
+	{
+		margin: 6px 0 0 8px;
+	}
+
+	DIV.funcMini
+	{
+		margin: 0 0 6px 8px;
+	}
+
+	INPUT.num
+	{
+		margin: 6px 7px;
+	}
+}
+
+/**
+ *	極小画面 (横組)
+ *	@width	524px～
+ *	@height	638px以下 (width: 556px～700px), 576px以下 (width: 700px～)
+ */
+@media	( max-width: 556px ),
+		( max-width: 700px ) and ( max-height: 638px ),
+		( max-height: 576px )
+{
+	/* 横組の基本骨格 */
+	.table-B1
+	{
+		clear: none;
+		float: none;
+		border-bottom: 1px solid #663300;
+	}
+
+	.table-B2
+	{
+		clear: none;
+		float: none;
+		border-bottom: 0;
+		border-left: 0;
+	}
+
+	.table-C
+	{
+		clear: none;
+		float: left;
+		border-left: 1px solid #663300;
+	}
+
+	/* 全体構造 */
+	.omissible, .omissible2
+	{
+		display: none;
+	}
+
+	.outer-1
+	{
+		width: 508px;
+		height: 405px;
+	}
+
+	.outer-2
+	{
+		width: 508px;
+	}
+
+	/* テーブル書式 */
+	TH
+	{
+		width: 58px;
+	}
+
+	.table-A
+	{
+		width: 506px;
+		height: 63px;
+	}
+
+	.td-A1
+	{
+		width: 193.5px;
+	}
+
+	.block-B
+	{
+		width: 251px;
+		height: 341px;
+	}
+
+	.table-B1
+	{
+		width: 251px;
+		height: 170px;
+	}
+
+	.table-B2
+	{
+		width: 251px;
+		height: 170px;
+	}
+
+	.table-C
+	{
+		width: 255px;
+		height: 340px;
+	}
+
+	.tr-C1
+	{
+		height: 56px;
+	}
+
+	.tr-C3
+	{
+		height: 80px;
+	}
+
+	/* 計算機部分の書式 */
+	DIV.func1
+	{
+		margin: 0 2px 8px 0;
+		padding: 8px 0 0 0;
+	}
+
+	DIV.func2
+	{
+		margin: 6px 0 6px 2px;
+	}
+
+	DIV.func3
+	{
+		margin: 4px 0 4px 2px;
+	}
+
+	DIV.funcMini
+	{
+		margin: 0 0 4px 2px;
+	}
+
+	INPUT.func1
+	{
+		width: 48px;
+		height: 80px;
+	}
+
+	INPUT.func2
+	{
+		width: 48px;
+		height: 72px;
+	}
+
+	INPUT.func3
+	{
+		width: 48px;
+		height: 48px;
+	}
+
+	INPUT.funcMini
+	{
+		width: 48px;
+		height: 32px;
+	}
+
+	INPUT.num
+	{
+		width: 40px;
+		height: 40px;
+		margin: 4px 3px;
+	}
+
+	/* その他の書式 */
+	INPUT.value
+	{
+		width: 96px;
+	}
+
+	INPUT.unit
+	{
+		width: 48px;
+	}
+
+	.radios
+	{
+		padding: 0 0 0 2px;
+	}
+}
+
+/**
+ *	iPhone 8用画面 (縦組)
+ *	@width	524px以下
+ */
+@media	( max-width: 524px )
+{
+	/* 縦組の基本骨格 */
+	.table-B1
+	{
+		clear: none;
+		float: left;
+		border-bottom: 2px solid #663300;
+	}
+
+	.table-B2
+	{
+		clear: none;
+		float: left;
+		border-bottom: 2px solid #663300;
+		border-left: 1px solid #663300;
+	}
+
+	.table-C
+	{
+		clear: left;
+		float: none;
+		border-left: 0;
+	}
+
+	/* 全体構造 */
+	.omissible
+	{
+		display: none;
+	}
+
+	.omissible2
+	{
+		display: inline;
+	}
+
+	BODY
+	{
+		font-size: 10px;
+	}
+
+	.outer-1
+	{
+		width: 359px;
+		height: 560px;
+	}
+
+	.outer-2
+	{
+		width: 359px;
+	}
+
+	/* テーブル書式 */
+	TH
+	{
+		font-size: 10pt;
+		width: 48px;
+	}
+
+	.table-A
+	{
+		width: 357px;
+		height: 64px;
+	}
+
+	.td-A1
+	{
+		width: 174.5px;
+	}
+
+	.block-B
+	{
+		width: 358px;
+		height: 74px;
+	}
+
+	.table-B1
+	{
+		width: 174px;
+		height: 74px;
+	}
+
+	.table-B2
+	{
+		width: 183px;
+		height: 74px;
+	}
+
+	.table-C
+	{
+		width: 357px;
+		height: 420px;
+	}
+
+	.tr-C1
+	{
+		height: 46px;
+	}
+
+	.tr-C3
+	{
+		height: 76px;
+	}
+
+	/* 計算機部分の書式 */
+	DIV.func1
+	{
+		margin: 2px 2px 8px 0;
+		padding: 8px 0 0 0;
+	}
+
+	DIV.func2
+	{
+		margin: 9px 0 9px 2px;
+	}
+
+	DIV.func3
+	{
+		margin: 6px 0 6px 2px;
+	}
+
+	DIV.funcMini
+	{
+		margin: 0 0 6px 2px;
+	}
+
+	INPUT.func1
+	{
+		width: 72px;
+		height: 120px;
+	}
+
+	INPUT.func2
+	{
+		width: 72px;
+		height: 108px;
+	}
+
+	INPUT.func3
+	{
+		width: 72px;
+		height: 72px;
+	}
+
+	INPUT.funcMini
+	{
+		width: 72px;
+		height: 48px;
+	}
+
+	INPUT.num
+	{
+		width: 60px;
+		height: 60px;
+		margin: 4px 3px;
+	}
+
+	/* その他の書式 */
+	INPUT, LABEL, SELECT, .hold, .subhead, .unit
+	{
+		font-size: 10pt;
+	}
+
+	INPUT.value
+	{
+		width: 80px;
+	}
+
+	INPUT.value-short
+	{
+		width: 32px;
+	}
+
+	INPUT.unit
+	{
+		width: 48px;
+	}
+
+	.radios
+	{
+		padding: 0 0 0 6px;
+	}
+}
+
+/**
+ *	縦方向コンパクト化１ (タイトル文字小さめ・水平分割線なし)
+ */
+@media	( max-height: 1078px ) and ( min-width: 872px ) and ( min-height: 974px ),	/* モバイル用大画面 (縦組) */
+		( max-height: 1044px ) and ( min-height: 940px ),							/* モバイル用中画面 (縦組) */
+		( max-height: 780px ) and ( max-width: 700px ),								/* モバイル用小画面 (縦組) */
+		( max-height: 680px ),														/* PC用標準・やや小さめ画面 (横組) */
+{
+	H1
+	{
+		font-size: 18pt;
+	}
+
+	HR
+	{
+		display: none;
+	}
+}
+
+/**
+ *	縦方向コンパクト化２ (タイトル文字なし・水平分割線なし)
+ */
+@media	( max-height: 1034px ) and ( min-width: 872px ) and ( min-height: 974px ),	/* モバイル用大画面 (縦組) */
+		( max-height: 1000px ) and ( min-height: 940px ),							/* モバイル用中画面 (縦組) */
+		( max-height: 736px ) and ( max-width: 700px ),								/* モバイル用小画面 (縦組) */
+		( max-height: 636px ),														/* PC用標準・やや小さめ画面 (横組) */
+{
+	H1
+	{
+		display: none;
+	}
+}
+
+/**
+ *	縦方向コンパクト化２一旦解除 (モバイル・PC兼用小画面用) (タイトル文字小さめ・水平分割線なし)
+ */
+@media	( max-width: 672px ) and ( min-height: 698px )
+{
+	H1
+	{
+		font-size: 18pt;
+		display: block;
+	}
+}
+
+/**
+ *	縦方向コンパクト化１一旦解除 (モバイル用小、PC兼用小、極小、iPhone 8画面用) (タイトル文字大きめ・水平分割線あり)
+ */
+@media	( max-width: 756px ) and ( min-height: 940px ),	/* モバイル用小画面 (縦組) */
+		( max-width: 672px ) and ( min-height: 742px ),	/* モバイル・PC兼用小画面 (縦組) */
+		( max-width: 556px ),							/* 極小画面 (横組)・iPhone 8用画面 (縦組) */
+		( max-width: 700px ) and ( max-height: 638px ),	/* 極小画面 (横組) */
+		( max-height: 576px )							/* 極小画面 (横組) */
+{
+	H1
+	{
+		font-size: 24pt;
+		display: block;
+	}
+
+	HR
+	{
+		display: block;
+	}
+}
+
+/**
+ *	縦方向コンパクト化１ (極小画面用) (タイトル文字小さめ・水平分割線なし)
+ */
+@media	( max-height: 558px )	/* 極小画面 (横組) */
+{
+	H1
+	{
+		font-size: 18pt;
+	}
+
+	HR
+	{
+		display: none;
+	}
+}
+
+/**
+ *	縦方向コンパクト化１ (iPhone 8画面用) (タイトル文字さらに小さめ・水平分割線なし)
+ *	@attention	iPhone 8用画面では、高さよりむしろタイトル横幅のため、常にコンパクト化する
+ */
+@media	( max-width: 524px )	/* iPhone 8用画面 (縦組) */
+{
+	H1
+	{
+		font-size: 16pt;
+	}
+
+	HR
+	{
+		display: none;
+	}
+}
+
+/**
+ *	縦方向コンパクト化２ (極小、iPhone 8画面用) (タイトル文字なし・水平分割線なし)
+ */
+@media	( max-height: 516px ),							/* 極小画面 (横組) */
+		( max-height: 664px ) and ( max-width: 524px )	/* iPhone 8用画面 (縦組) */
+{
+	H1
+	{
+		display: none;
+	}
+}
