@@ -118,7 +118,7 @@ When you select "normal", the screen turns back.
 <BR>
 より詳しい説明は、仕様書またはマニュアルを参照してください。
 <BR>
-For more detail, see the specification or the manual.
+For more detail, read the specification document or the manual.
 
 ## インストール方法 - Install
 
