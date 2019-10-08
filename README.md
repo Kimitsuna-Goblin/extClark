@@ -7,9 +7,9 @@ A tool to estimate optimum dosage for a child with his/her body weight via the e
 
 ### ファイル - Files
 
-このツールは以下の3つのファイルから成り立ちます。他にライブラリ等は必要ありません。
+このツールは以下のファイルから成り立ちます。他にライブラリ等は必要ありません。
 <BR>
-This tool is constituted by 3 files following. No other libralies are need.
+This tool is constituted by following files. No other libralies are need.
 
 [extClark.css](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.css) - 画面デザインを定義するスタイルシートです。
 <BR>
@@ -23,6 +23,10 @@ The main HTML file of this tool. Please open this file via your web browser.
 [extClark.js](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.js) - ツールのエンジン部分である JavaScript ファイルです。
 <BR>
 The JavaScript file which is the engine of this tool.
+
+[button/*.png](https://github.com/Kimitsuna-Goblin/extClark/blob/master/button) - ツールのGUIに表示されるボタンの画像です。
+<BR>
+The image files for the buttons on the GUI of this tool.
 
 ### 機能 - Functions
 
@@ -158,16 +162,18 @@ For more detail, read the specification or the manual.
 
 ## インストール方法 - Install
 
-3つのファイル
+3つのテキストファイルと、[button](https://github.com/Kimitsuna-Goblin/extClark/blob/master/button)フォルダおよびその中身
 ([extClark.css](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.css),
 [extClark.html](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.html),
-[extClark.html](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.js))
+[extClark.html](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.js),
+[button](https://github.com/Kimitsuna-Goblin/extClark/blob/master/button))
 をPCやスマホ等のどこでも好きなフォルダに置けばインストール完了です。
 <BR>
-Put 3 files
+Put 3 text files and the [button](https://github.com/Kimitsuna-Goblin/extClark/blob/master/button) folder with its contents
 ([extClark.css](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.css),
-<A href="https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.html">extClark.html</A>,
-<A href="https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.js">extClark.js</A>)
+[extClark.html](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.html),
+[extClark.html](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.js),
+[button](https://github.com/Kimitsuna-Goblin/extClark/blob/master/button))
 into a same folder of your PC or mobile device wherever. That's all.
 <BR>
 <BR>
