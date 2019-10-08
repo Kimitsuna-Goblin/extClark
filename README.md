@@ -213,4 +213,4 @@ the [specification](https://github.com/Kimitsuna-Goblin/extClark-Doc/blob/master
 
 ## 著作者 - Author
 
-[Kimitsuna-Goblin](https://github.com/Kimitsuna-Goblin) (浦 公統)
+[Kimitsuna-Goblin](https://github.com/Kimitsuna-Goblin) (浦 公統; Ura Kimitsuna)
