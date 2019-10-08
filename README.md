@@ -1,6 +1,6 @@
 # 小児薬用量計算ツール（拡張Clark式）
 
-[extClark.html](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.html) - 拡張Clark式によって、小児の体重から薬用量の目安を算出するツールです。
+拡張Clark式によって、小児の体重から薬用量の目安を算出するツールです。
 <BR>
 A tool to estimate optimum dosage for a child with his/her body weight via the extented Clark's rule.
 
