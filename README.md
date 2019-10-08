@@ -1,6 +1,7 @@
 # 小児薬用量計算ツール（拡張Clark式）
 
-[extClark.html](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.html) - 拡張Clark式によって、小児の体重から薬用量の目安を算出するツールです。<BR>
+[extClark.html](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.html) - 拡張Clark式によって、小児の体重から薬用量の目安を算出するツールです。
+<BR>
 A tool to estimate optimum dosage for a child with his/her body weight via the extented Clark's rule.
 
 ## 説明 - Description
@@ -24,9 +25,9 @@ The main HTML file of this tool. Please open this file via your web browser.
 <BR>
 The JavaScript file which is the engine of this tool.
 
-[button/*.png](https://github.com/Kimitsuna-Goblin/extClark/blob/master/button) - ツールのGUIに表示されるボタンの画像です。
+[button/*.png](https://github.com/Kimitsuna-Goblin/extClark/blob/master/button) - ツールの画面に表示されるボタンの画像です。
 <BR>
-The image files for the buttons on the GUI of this tool.
+The image files for the buttons on the screen of this tool.
 
 ### 機能 - Functions
 
@@ -162,19 +163,25 @@ For more detail, read the specification or the manual.
 
 ## インストール方法 - Install
 
-3つのテキストファイルと、[button](https://github.com/Kimitsuna-Goblin/extClark/blob/master/button)フォルダおよびその中身
-([extClark.css](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.css),
+この画面の [Clone or download] ボタンで zip ファイルをダウンロードして、その中身をPCやスマホ等のどこでも好きなフォルダに展開すればインストール完了です。
+展開先に、5つのテキストファイルと[button](https://github.com/Kimitsuna-Goblin/extClark/blob/master/button)フォルダ
+([README.md](https://github.com/Kimitsuna-Goblin/extClark/blob/master/README.md),
+[LICENSE](https://github.com/Kimitsuna-Goblin/extClark/blob/master/LICENSE),
+[extClark.css](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.css),
 [extClark.html](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.html),
 [extClark.html](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.js),
 [button](https://github.com/Kimitsuna-Goblin/extClark/blob/master/button))
-をPCやスマホ等のどこでも好きなフォルダに置けばインストール完了です。
+があることを確認してください。
 <BR>
-Put 3 text files and the [button](https://github.com/Kimitsuna-Goblin/extClark/blob/master/button) folder with its contents
-([extClark.css](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.css),
+Push [Clone or download] button on this screen and download the zip file,
+and unzip all contents into a folder at your PC or mobile device wherever. That's all.
+Make sure there are 5 text files and the [button](https://github.com/Kimitsuna-Goblin/extClark/blob/master/button) folder at the unzipped folder
+([README.md](https://github.com/Kimitsuna-Goblin/extClark/blob/master/README.md),
+[LICENSE](https://github.com/Kimitsuna-Goblin/extClark/blob/master/LICENSE),
+[extClark.css](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.css),
 [extClark.html](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.html),
-[extClark.html](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.js),
-[button](https://github.com/Kimitsuna-Goblin/extClark/blob/master/button))
-into a same folder of your PC or mobile device wherever. That's all.
+[extClark.html](https://github.com/Kimitsuna-Goblin/extClark/blob/master/extClark.js) and
+[button](https://github.com/Kimitsuna-Goblin/extClark/blob/master/button)).
 <BR>
 <BR>
 必要に応じて、
