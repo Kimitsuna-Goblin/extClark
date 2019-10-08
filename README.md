@@ -163,7 +163,7 @@ For more detail, read the specification or the manual.
 
 ## インストール方法 - Install
 
-この画面の [Clone or download] ボタンで zip ファイルをダウンロードして、その中身をPCやスマホ等のどこでも好きなフォルダに展開すればインストール完了です。
+[この画面](https://github.com/Kimitsuna-Goblin/extClark)の [Clone or download] ボタンで zip ファイルをダウンロードして、その中身をPCやスマホ等のどこでも好きなフォルダに展開すればインストール完了です。
 展開先に、5つのテキストファイルと[button](https://github.com/Kimitsuna-Goblin/extClark/blob/master/button)フォルダ
 ([README.md](https://github.com/Kimitsuna-Goblin/extClark/blob/master/README.md),
 [LICENSE](https://github.com/Kimitsuna-Goblin/extClark/blob/master/LICENSE),
@@ -173,7 +173,7 @@ For more detail, read the specification or the manual.
 [button](https://github.com/Kimitsuna-Goblin/extClark/blob/master/button))
 があることを確認してください。
 <BR>
-Push [Clone or download] button on this screen and download the zip file,
+Push [Clone or download] button on [this screen](https://github.com/Kimitsuna-Goblin/extClark) and download the zip file,
 and unzip all contents into a folder at your PC or mobile device wherever. That's all.
 Make sure there are 5 text files and the [button](https://github.com/Kimitsuna-Goblin/extClark/blob/master/button) folder at the unzipped folder
 ([README.md](https://github.com/Kimitsuna-Goblin/extClark/blob/master/README.md),
