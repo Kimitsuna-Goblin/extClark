@@ -36,7 +36,7 @@ Then it shows the child dosage.
 Then it converts to the adult dosage.
 * Multiplication/Division - You can multiplication and division as a calculator for ingredients calculation or total dosage calculation and so on.
 
-### 拡張Clark式とは - What's extended Clark's rule?
+### 拡張Clark式とは - What's the extended Clark's rule?
 
 拡張Clark式は、医薬品の最適な小児量を推定するための式の一つです。
 本ツールの著作者である浦が考案したもので、米国などで使われている従来のClark式を改良し、推定精度を向上させています。
