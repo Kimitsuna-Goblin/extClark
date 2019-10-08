@@ -43,7 +43,7 @@ Then it converts to the adult dosage.
 <BR>
 The extended Clark's rule is one of the rules to estimale optimum child dosage.
 It is a modification of the Clark's rule, and formulated by Ura the author of this tool.
-It improves accuracy of estimation than the Clark's rule currently used in U.S. and some countries.
+It improves accuracy of estimation than the Clark's rule currently used in the U.S. and some countries.
 <BR>
 <BR>
 従来のClark式は、D<SUB>C</SUB> = D<SUB>A</SUB> ⋅ C / A で表されます。
