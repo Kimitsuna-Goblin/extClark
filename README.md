@@ -42,8 +42,8 @@ Then it converts to the adult dosage.
 本ツールの著作者である浦が考案したもので、米国などで使われているClark式を改良し、推定精度を向上させています。
 <BR>
 The extended Clark's rule is one of the rules to estimale optimum child dosage.
-It is formulated by Ura the author of this tool.
-It is a modification of the Clark's rule currently used in U.S. and some countries, so that it improves accuracy of estimation.
+It is a modification of the Clark's rule, and formulated by Ura the author of this tool.
+It improves accuracy of estimation than the Clark's rule currently used in U.S. and some countries.
 <BR>
 <BR>
 従来のClark式は、D<SUB>C</SUB> = D<SUB>A</SUB> ⋅ C / A で表されます。
