@@ -77,7 +77,7 @@ Generally optimum dosage is considered to be in proportion to the body surface d
 so we equalize the dimension to body surface dimension (2D) for better estimation.
 In the case of body weight, we use k=2/3 because the dimension of body weight is 3D.
 And we don't have to fix 150 lb as the adult weight for A.
-We can take a value of A flexibly considering the child's age and sex, or race and other conditions.
+We can take a value for A flexibly considering the child's age and sex, or race and other conditions.
 
 ## 注意 - Remark
 
