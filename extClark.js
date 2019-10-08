@@ -1,5 +1,5 @@
 /*!
- *	Copyright (C) 2019 ＧＯＢ
+ *	Copyright (C) 2019 浦 公統
  *	Released under the MIT license.
  *	see https://opensource.org/licenses/MIT/
  */
@@ -7,7 +7,7 @@
 /**
  *	@file		extClark.js
  *	@brief		小児薬用量計算ツール (拡張Clark式) JavaScriptファイル
- *	@version	0.91
+ *	@version	1.00
  */
 
 ////////////////////////////////////////////////////////////////////////
