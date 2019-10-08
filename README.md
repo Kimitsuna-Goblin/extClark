@@ -60,7 +60,7 @@ On the Clark's rule, we estimate child dosage via D<SUB>C</SUB> = D<SUB>A</SUB> 
 Now D<SUB>C</SUB> is the estimated child dosage and D<SUB>A</SUB> is the adult dosage.
 C and A are values of measurement, for example, body weight.
 C is the child's measured value and A is the criterion value for adult.
-Especially when we estimate via body weight, we use 150 lb for A.
+Especially when we estimate with body weight, we use 150 lb for A.
 <BR>
 <BR>
 拡張Clark式は、D<SUB>C</SUB> = D<SUB>A</SUB> (C / A)<SUP>k</SUP> で表されます。
