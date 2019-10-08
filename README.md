@@ -79,9 +79,9 @@ We can take a value of A flexibly considering the child's age and sex, or race a
 現在、本ツールの対象は日本人患者のみです。
 小児量の推定に用いる成人体重(基準値)は西暦2000年度の日本人小児の体格の統計データをもとに計算されています。
 <BR>
-This tool of this version is for Japanese patients only.
+This tool of this version is for only Japanese patients.
 The adult weights (criterions) which are used to estimate child dosage have been computed
-based on the statistical body mass data of Japanese children at the year 2000.
+based on the statistical data of body dimensions of Japanese children at the year 2000.
 <BR>
 <BR>
 日本人以外に本ツールを適用する場合は、予め、対象となる国あるいは人種の小児の体格の統計データを用いて解析し、
@@ -89,7 +89,7 @@ based on the statistical body mass data of Japanese children at the year 2000.
 <BR>
 If you want to use this tool for non-Japanese patients,
 it is recommended to adjust the adult weights (criterions) and/or the segmentations of children ages
-with analysis the body mass data of the country or the race of the target patients.
+with analysing data of body dimensions of the country or the race of the target patients.
 
 ## 使用方法 - Usage
 
