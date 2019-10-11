@@ -2,7 +2,7 @@
 
 拡張Clark式によって、小児の体重から薬用量の目安を算出するツールです。
 <BR>
-This is a tool to estimate optimum dosage for a child with his/her body weight via the extented Clark's rule.
+This is a tool to estimate the optimum dosage amount for a child with his/her body weight via the extented Clark's rule.
 
 ## 説明 - Description
 
@@ -36,17 +36,17 @@ The image files for the buttons on the screen of this tool.
 + 乗除算 - 原薬量計算や全量計算などのために、電卓のように乗除算ができます。
 
 * Child dosage calculation (Normal calculation) - Input body weight (kg) of the child and the adult dosage (g/mg/μg/T/mL).
-Then it shows the child dosage.
-* Adult dosage calculation (Reverse calculation) - Input body weight (kg) of the child and the child dosage (g/mg/μg/T/mL).
-Then it converts to the adult dosage.
-* Multiplication/Division - You can multiplication and division as a calculator for ingredients calculation or total dosage calculation and so on.
+Then it shows the dosage amount for the child.
+* Adult dosage calculation (Reverse calculation) - Input body weight (kg) of the child and the child's dosage (g/mg/μg/T/mL).
+Then it converts to the dosage amount for adult patients.
+* Multiplication/Division - You can multiplication and division as a calculator for ingredients calculation or total dose calculation and so on.
 
 ### 拡張Clark式とは - What's the extended Clark's rule?
 
 拡張Clark式は、医薬品の最適な小児量を推定するための式の一つです。
 本ツールの著作者である浦が考案したもので、米国などで使われている従来のClark式を改良し、推定精度を向上させています。
 <BR>
-The extended Clark's rule is one of the rules to estimale optimum a child dosage.
+The extended Clark's rule is one of the rules to estimale the optimum dosage amount for children.
 It is a modification of the Clark's rule, and formulated by Ura the author of this tool.
 It improves accuracy of estimation than the Clark's rule currently used in the U.S. and some other countries.
 <BR>
@@ -65,16 +65,16 @@ Especially when we estimate with body weights, we use 150 lb as the criterion ad
 <BR>
 拡張Clark式は、*D<SUB>C</SUB>* = *D<SUB>A</SUB>* (*C* / *A*)<SUP>*k*</SUP> で表されます。
 ここで、*D<SUB>C</SUB>*、*D<SUB>A</SUB>*、*C*、*A* の意味は従来のClark式と同じです。
-*k* は体重など測定値の次元を体表面積の次元に合わせるための指数です。
-通常、最適な薬用量は体表面積に比例するとされているので、より良い推定のため、次元を体表面積の次元 (2次元) に合わせます。
+*k* は体重など身体計測値の次元を体表面積の次元に合わせるための指数です。
+通常、最適な薬用量は体表面積に比例するとされているので、より良い推定のため、計測値の次元を体表面積の次元 (2次元) に合わせます。
 体重の場合、次元は3次元なので、*k*=2/3 です。
 また、*A* の成人体重の値は、必ずしも 150ポンド とする必要はなく、患児の年齢や性別、あるいは人種などの条件を考慮して、柔軟に選ぶことができます。
 <BR>
 On the extended Clark's rule, we estimate a child dosage via *D<SUB>C</SUB>* = *D<SUB>A</SUB>* (*C* / *A*)<SUP>*k*</SUP>.
 Now the meanings of *D<SUB>C</SUB>*, *D<SUB>A</SUB>*, *C* and *A* are same as the normal Clark's rule.
-The *k* is an index number added to equalize the dimension of the mesurement value to the body surface dimension.
+The *k* is an index number added to equalize the dimension of the body measurement to the body surface dimension.
 Generally optimum dosage is considered to be in proportion to the body surface dimension,
-so we equalize the dimension to the body surface dimension (2D) for better estimation.
+so we equalize the dimension of the measurement to the body surface dimension (2D) for better estimation.
 In the case of body weights, we use *k*=2/3 because the dimension of body weight is 3D.
 And we don't have to fix 150 lb as the criterion adult weight for *A*.
 We can take a flexible value for *A* considering the child's age and sex, or race and other conditions.
