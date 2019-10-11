@@ -86,7 +86,7 @@ We can take a flexible value for *A* considering the child's age and sex, or rac
 <BR>
 This tool of this version is for only Japanese patients.
 The adult weights (criterions) which are used to estimate a child dosage have been computed
-based on the statistical data of body dimensions of Japanese children at the year 2000 published by the [JSPE][linkref_e].
+based on the statistical data of body measurements of Japanese children at the year 2000 published by the [JSPE][linkref_e].
 <BR>
 <BR>
 日本人以外に本ツールを適用する場合は、予め、対象となる国あるいは人種の小児の体格の統計データを用いて解析し、
