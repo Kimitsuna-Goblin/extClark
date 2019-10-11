@@ -60,7 +60,7 @@ On the Clark's rule, we estimate a child dosage via *D<SUB>C</SUB>* = *D<SUB>A</
 Now *D<SUB>C</SUB>* is the estimated child dosage and *D<SUB>A</SUB>* is the adult dosage.
 *C* and *A* are values of a kind of body measurements, for example, body weights.
 *C* is the child's measured value and *A* is the criterion value for adult.
-Especially when we estimate with body weights, we use 150 lb as the criterion adult weight for *A*.
+Especially when we estimate with body weights, we use 150 lb as the adult criterion weight for *A*.
 <BR>
 <BR>
 拡張Clark式は、*D<SUB>C</SUB>* = *D<SUB>A</SUB>* (*C* / *A*)<SUP>*k*</SUP> で表されます。
@@ -76,7 +76,7 @@ The *k* is an index number added to equalize the dimension of the body measureme
 Generally optimum dosage is considered to be in proportion to the body surface dimension,
 so we equalize the dimension of the measurement to the body surface dimension (2D) for better estimation.
 In the case of body weights, we use *k*=2/3 because the dimension of body weight is 3D.
-And we don't have to fix 150 lb as the criterion adult weight for *A*.
+And we don't have to fix 150 lb as the adult criterion weight for *A*.
 We can take a flexible value for *A* considering the child's age and sex, or race and other conditions.
 
 ## 注意 - Remark
@@ -160,9 +160,9 @@ the screen changes into the adult dosage calculation (reverse calculation) mode.
 When you select "normal", the screen turns back.
 <BR>
 <BR>
-より詳しい説明は、仕様書またはマニュアルを参照してください。
+より詳しい説明は、[外部設計書](https://github.com/Kimitsuna-Goblin/extClark-Doc/blob/master/%E4%BB%95%E6%A7%98%E6%9B%B8/%E5%B0%8F%E5%85%90%E8%96%AC%E7%94%A8%E9%87%8F%E8%A8%88%E7%AE%97%E3%83%84%E3%83%BC%E3%83%AB(%E6%8B%A1%E5%BC%B5Clark%E5%BC%8F)_%E5%A4%96%E9%83%A8%E8%A8%AD%E8%A8%88%E6%9B%B8.pdf)またはマニュアルを参照してください。
 <BR>
-For more detail, read the specification or the manual.
+For more detail, read the [specification](https://github.com/Kimitsuna-Goblin/extClark-Doc/blob/master/%E4%BB%95%E6%A7%98%E6%9B%B8/%E5%B0%8F%E5%85%90%E8%96%AC%E7%94%A8%E9%87%8F%E8%A8%88%E7%AE%97%E3%83%84%E3%83%BC%E3%83%AB(%E6%8B%A1%E5%BC%B5Clark%E5%BC%8F)_%E5%A4%96%E9%83%A8%E8%A8%AD%E8%A8%88%E6%9B%B8.pdf) or the manual.
 
 ## インストール方法 - Install
 
@@ -196,7 +196,7 @@ If you need, please create a shortcut to
 
 ## 関連ドキュメント - Documents
 
-本ツールに関するドキュメント類 (仕様書、不具合記録、マニュアル等) は別リポジトリ
+本ツールに関するドキュメント類 (仕様書、解決済み不具合一覧、マニュアル等) は別リポジトリ
 ([extClark-Doc](https://github.com/Kimitsuna-Goblin/extClark-Doc))
 にて
 [CC BY-SA 4.0](https://github.com/Kimitsuna-Goblin/extClark-Doc/blob/master/LICENSE)
@@ -217,11 +217,14 @@ license.
 の
 [外部設計書](https://github.com/Kimitsuna-Goblin/extClark-Doc/blob/master/%E4%BB%95%E6%A7%98%E6%9B%B8/%E5%B0%8F%E5%85%90%E8%96%AC%E7%94%A8%E9%87%8F%E8%A8%88%E7%AE%97%E3%83%84%E3%83%BC%E3%83%AB(%E6%8B%A1%E5%BC%B5Clark%E5%BC%8F)_%E5%A4%96%E9%83%A8%E8%A8%AD%E8%A8%88%E6%9B%B8.pdf)
 も併せて更新し、著作者名を記入してください。
+ただし、[master](https://github.com/Kimitsuna-Goblin/extClark)を更新せず、改変したツールを改変者が独自に自己責任で使用・配布する場合は、[関連ドキュメントのmaster](https://github.com/Kimitsuna-Goblin/extClark-Doc)は更新しないでください。
 <BR>
 When you change the specifications (functions, interfaces, screen designs, etc.)
 and update the [master](https://github.com/Kimitsuna-Goblin/extClark),
 plaese also update the [documents](https://github.com/Kimitsuna-Goblin/extClark-Doc) and fill the copyright in
 the [specification](https://github.com/Kimitsuna-Goblin/extClark-Doc/blob/master/%E4%BB%95%E6%A7%98%E6%9B%B8/%E5%B0%8F%E5%85%90%E8%96%AC%E7%94%A8%E9%87%8F%E8%A8%88%E7%AE%97%E3%83%84%E3%83%BC%E3%83%AB(%E6%8B%A1%E5%BC%B5Clark%E5%BC%8F)_%E5%A4%96%E9%83%A8%E8%A8%AD%E8%A8%88%E6%9B%B8.pdf).
+But when you don't update the [master](https://github.com/Kimitsuna-Goblin/extClark) and use or distribute your updated tool by your own responsibility,
+please don't update the [master of the documents](https://github.com/Kimitsuna-Goblin/extClark-Doc).
 
 ## ライセンス - Licence
 
