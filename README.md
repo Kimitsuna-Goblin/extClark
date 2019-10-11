@@ -119,9 +119,9 @@ Now input the adult dosage and push "g" button.
 Then the I/O area will show the child dosage for inputted adult dosage.
 <BR>
 <BR>
-「年齢」と「性別」は「無指定」のままでも計算できますが、正しい年齢と性別を選択した方が、より計算精度が良くなります。
+「年齢」と「性別」は「無指定」のままでも計算できますが、正しい年齢と性別を選択した方が、より推定精度が良くなります。
 <BR>
-The "age" and "sex" can be kept the default "non-selected", but it is recommended to select the collect age and sex for accuracy enhancement.
+The "age" and "sex" can be kept the default "non-selected", but it is recommended to select the collect age and sex for better estimation.
 <BR>
 <BR>
 入出力には、キーボードからの直接入力はできません。画面上のボタンで入力してください。
