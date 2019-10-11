@@ -51,26 +51,26 @@ It is a modification of the Clark's rule, and formulated by Ura the author of th
 It improves accuracy of estimation than the Clark's rule currently used in the U.S. and some other countries.
 <BR>
 <BR>
-  従来のClark式は、*D<SUB>C</SUB> = D<SUB>A</SUB> ⋅ C / A* で表されます。
-  ここで、*D<SUB>C</SUB>* は小児量の推定値、*D<SUB>A</SUB>* は 成人量です。
+従来のClark式は、*D<SUB>C</SUB>* = *D<SUB>A</SUB>* ⋅ *C* / *A* で表されます。
+ここで、*D<SUB>C</SUB>* は小児量の推定値、*D<SUB>A</SUB>* は 成人量です。
 *C* と *A* は体重などの値を示し、*C* は小児の測定値、*A* は成人の基準値です。
 特に、体重で小児量を推定する場合、*A* の値は、成人体重として 150ポンド が用いられます。
 <BR>
-On the Clark's rule, we estimate a child dosage via *D<SUB>C</SUB> = D<SUB>A</SUB> ⋅ C / A*.
+On the Clark's rule, we estimate a child dosage via *D<SUB>C</SUB>* = *D<SUB>A</SUB>* ⋅ *C* / *A*.
 Now *D<SUB>C</SUB>* is the estimated child dosage and *D<SUB>A</SUB>* is the adult dosage.
 *C* and *A* are values of measurement, for example, body weight.
 *C* is the child's measured value and *A* is the criterion value for adult.
 Especially when we estimate with body weight, we use 150 lb as the criterion adult weight for *A*.
 <BR>
 <BR>
-拡張Clark式は、*D<SUB>C</SUB> = D<SUB>A</SUB> (C / A)<SUP>k</SUP>* で表されます。
+拡張Clark式は、*D<SUB>C</SUB>* = *D<SUB>A</SUB>* (*C* / *A*)<SUP>*k*</SUP> で表されます。
 ここで、*D<SUB>C</SUB>*、*D<SUB>A</SUB>*、*C*、*A* の意味は従来のClark式と同じです。
 *k* は体重など測定値の次元を体表面積の次元に合わせるための指数です。
 通常、最適な薬用量は体表面積に比例するとされているので、より良い推定のため、次元を体表面積の次元 (2次元) に合わせます。
 体重の場合、次元は3次元なので、*k*=2/3 です。
 また、*A* の成人体重の値は、必ずしも 150ポンド とする必要はなく、患児の年齢や性別、あるいは人種などの条件を考慮して、柔軟に選ぶことができます。
 <BR>
-On the extended Clark's rule, we estimate a child dosage via *D<SUB>C</SUB> = D<SUB>A</SUB> (C / A)<SUP>k</SUP>*.
+On the extended Clark's rule, we estimate a child dosage via *D<SUB>C</SUB>* = *D<SUB>A</SUB>* (*C* / *A*)<SUP>*k*</SUP>.
 Now the meanings of *D<SUB>C</SUB>*, *D<SUB>A</SUB>*, *C* and *A* are same as the normal Clark's rule.
 The *k* is an index number added to equalize the dimension of the mesurement value to body surface dimension.
 Generally optimum dosage is considered to be in proportion to the body surface dimension,
