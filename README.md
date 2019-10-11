@@ -53,12 +53,12 @@ It improves accuracy of estimation than the Clark's rule currently used in the U
 <BR>
 従来のClark式は、*D<SUB>C</SUB>* = *D<SUB>A</SUB>* ⋅ *C* / *A* で表されます。
 ここで、*D<SUB>C</SUB>* は小児量の推定値、*D<SUB>A</SUB>* は 成人量です。
-*C* と *A* は体重などの値を示し、*C* は小児の測定値、*A* は成人の基準値です。
+*C* と *A* は体重などの身体計測値を示し、*C* は小児の測定値、*A* は成人の基準値です。
 特に、体重で小児量を推定する場合、*A* の値は、成人体重として 150ポンド が用いられます。
 <BR>
 On the Clark's rule, we estimate a child dosage via *D<SUB>C</SUB>* = *D<SUB>A</SUB>* ⋅ *C* / *A*.
 Now *D<SUB>C</SUB>* is the estimated child dosage and *D<SUB>A</SUB>* is the adult dosage.
-*C* and *A* are values of measurement, for example, body weight.
+*C* and *A* are values of a kind of body measurements, for example, body weights.
 *C* is the child's measured value and *A* is the criterion value for adult.
 Especially when we estimate with body weight, we use 150 lb as the criterion adult weight for *A*.
 <BR>
