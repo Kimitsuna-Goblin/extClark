@@ -60,7 +60,7 @@ On the Clark's rule, we estimate a child dosage via *D<SUB>C</SUB>* = *D<SUB>A</
 Now *D<SUB>C</SUB>* is the estimated child dosage and *D<SUB>A</SUB>* is the adult dosage.
 *C* and *A* are values of a kind of body measurements, for example, body weights.
 *C* is the child's measured value and *A* is the criterion value for adult.
-Especially when we estimate with body weight, we use 150 lb as the criterion adult weight for *A*.
+Especially when we estimate with body weights, we use 150 lb as the criterion adult weight for *A*.
 <BR>
 <BR>
 拡張Clark式は、*D<SUB>C</SUB>* = *D<SUB>A</SUB>* (*C* / *A*)<SUP>*k*</SUP> で表されます。
@@ -72,10 +72,10 @@ Especially when we estimate with body weight, we use 150 lb as the criterion adu
 <BR>
 On the extended Clark's rule, we estimate a child dosage via *D<SUB>C</SUB>* = *D<SUB>A</SUB>* (*C* / *A*)<SUP>*k*</SUP>.
 Now the meanings of *D<SUB>C</SUB>*, *D<SUB>A</SUB>*, *C* and *A* are same as the normal Clark's rule.
-The *k* is an index number added to equalize the dimension of the mesurement value to body surface dimension.
+The *k* is an index number added to equalize the dimension of the mesurement value to the body surface dimension.
 Generally optimum dosage is considered to be in proportion to the body surface dimension,
-so we equalize the dimension to body surface dimension (2D) for better estimation.
-In the case of body weight, we use *k*=2/3 because the dimension of body weight is 3D.
+so we equalize the dimension to the body surface dimension (2D) for better estimation.
+In the case of body weights, we use *k*=2/3 because the dimension of body weight is 3D.
 And we don't have to fix 150 lb as the criterion adult weight for *A*.
 We can take a flexible value for *A* considering the child's age and sex, or race and other conditions.
 
@@ -94,7 +94,7 @@ based on the statistical data of body dimensions of Japanese children at the yea
 <BR>
 If you want to use this tool for non-Japanese patients,
 it is recommended to adjust the adult weights (criterions) and/or the segmentations of children ages
-with analysing data of body dimensions of the country or the race of the target patients.
+with analysing data of body dimensions of the target patient's country or race.
 
 [linkref_j]: http://jspe.umin.jp/medical/taikaku.html "日本人小児の体格の評価"
 [linkref_e]: http://jspe.umin.jp/eng/index.html "The Japanese Society for Pediatric Endocrinology"
