@@ -217,7 +217,7 @@ license.
 の
 [外部設計書](https://github.com/Kimitsuna-Goblin/extClark-Doc/blob/master/%E4%BB%95%E6%A7%98%E6%9B%B8/%E5%B0%8F%E5%85%90%E8%96%AC%E7%94%A8%E9%87%8F%E8%A8%88%E7%AE%97%E3%83%84%E3%83%BC%E3%83%AB(%E6%8B%A1%E5%BC%B5Clark%E5%BC%8F)_%E5%A4%96%E9%83%A8%E8%A8%AD%E8%A8%88%E6%9B%B8.pdf)
 も併せて更新し、著作者名を記入してください。
-ただし、[master](https://github.com/Kimitsuna-Goblin/extClark)を更新せず、改変したツールを改変者が独自に自己責任で使用・配布する場合は、[関連ドキュメントのmaster](https://github.com/Kimitsuna-Goblin/extClark-Doc)は更新しないでください。
+ただし、[master](https://github.com/Kimitsuna-Goblin/extClark)を更新せず、改変したツールを改変者が独自に自己責任で使用・配布する場合には、[関連ドキュメントのmaster](https://github.com/Kimitsuna-Goblin/extClark-Doc)は更新しないでください。
 <BR>
 When you change the specifications (functions, interfaces, screen designs, etc.)
 and update the [master](https://github.com/Kimitsuna-Goblin/extClark),
