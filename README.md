@@ -94,7 +94,7 @@ based on the statistical data of body measurements of Japanese children at the y
 <BR>
 If you want to use this tool for non-Japanese patients,
 it is recommended to adjust the adult weights (criterions) and/or the segmentations of children ages
-with analysing data of body dimensions of the target patient's country or race.
+with analysing data of body measurements of the target patient's country or race.
 
 [linkref_j]: http://jspe.umin.jp/medical/taikaku.html "日本人小児の体格の評価"
 [linkref_e]: http://jspe.umin.jp/eng/index.html "The Japanese Society for Pediatric Endocrinology"
