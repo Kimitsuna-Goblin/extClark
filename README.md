@@ -103,7 +103,7 @@ with analysing data of body measurements of the target patient's country or race
 
 本ツールは、電卓と同じような感覚で、直感的に操作できます。
 <BR>
-You can use this tool like a calculator instinctively.
+You can use this tool like a calculator intutively.
 <BR>
 <BR>
 最も単純に使ってみるには、小児の体重を入力して「kg」ボタンを押してください。
