@@ -148,8 +148,8 @@ It doesn't clear the child's weight nor the adult dosage.
 <BR>
 「×,÷」ボタンを押すと、乗除算用の画面に切り替わります。「kg,g」ボタンで元の画面に戻ります。
 <BR>
-The "×,÷" button make the screen to change into the multiplication/division mode.
-The "kg,g" button make the screen to turn back.
+The "×,÷" button makes the screen to change into the multiplication/division mode.
+The "kg,g" button makes the screen to turn back.
 <BR>
 <BR>
 「計算方法」で「逆計算」を選ぶと、成人量計算 (逆計算) 用の画面に切り替わります。
@@ -202,7 +202,7 @@ If you need, please create a shortcut to
 [CC BY-SA 4.0](https://github.com/Kimitsuna-Goblin/extClark-Doc/blob/master/LICENSE)
 ライセンスの下で提供されています。
 <BR>
-The documents (specification, bug report, manual, etc.) for this tool are provided at an other repository
+The documents (specifications, fixed bugs lists, manuals, etc.) for this tool are provided at an other repository
 ([extClark-Doc](https://github.com/Kimitsuna-Goblin/extClark-Doc))
 under
 the [CC BY-SA 4.0](https://github.com/Kimitsuna-Goblin/extClark-Doc/blob/master/LICENSE)
@@ -218,8 +218,8 @@ license.
 [外部設計書](https://github.com/Kimitsuna-Goblin/extClark-Doc/blob/master/%E4%BB%95%E6%A7%98%E6%9B%B8/%E5%B0%8F%E5%85%90%E8%96%AC%E7%94%A8%E9%87%8F%E8%A8%88%E7%AE%97%E3%83%84%E3%83%BC%E3%83%AB(%E6%8B%A1%E5%BC%B5Clark%E5%BC%8F)_%E5%A4%96%E9%83%A8%E8%A8%AD%E8%A8%88%E6%9B%B8.pdf)
 も併せて更新し、著作者名を記入してください。
 <BR>
-If you would change the specifications (functions, interfaces, screen designs, etc.)
-and update [master](https://github.com/Kimitsuna-Goblin/extClark),
+When you change the specifications (functions, interfaces, screen designs, etc.)
+and update the [master](https://github.com/Kimitsuna-Goblin/extClark),
 plaese also update the [documents](https://github.com/Kimitsuna-Goblin/extClark-Doc) and fill the copyright in
 the [specification](https://github.com/Kimitsuna-Goblin/extClark-Doc/blob/master/%E4%BB%95%E6%A7%98%E6%9B%B8/%E5%B0%8F%E5%85%90%E8%96%AC%E7%94%A8%E9%87%8F%E8%A8%88%E7%AE%97%E3%83%84%E3%83%BC%E3%83%AB(%E6%8B%A1%E5%BC%B5Clark%E5%BC%8F)_%E5%A4%96%E9%83%A8%E8%A8%AD%E8%A8%88%E6%9B%B8.pdf).
 
