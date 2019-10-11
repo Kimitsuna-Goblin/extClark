@@ -38,7 +38,7 @@ The image files for the buttons on the screen of this tool.
 * Child dosage calculation (Normal calculation) - Input body weight (kg) of the child and the adult dosage (g/mg/μg/T/mL).
 Then it shows the dosage amount for the child.
 * Adult dosage calculation (Reverse calculation) - Input body weight (kg) of the child and the child's dosage (g/mg/μg/T/mL).
-Then it converts to the dosage amount for adult patients.
+Then it converts to the adult dosage amount.
 * Multiplication/Division - You can multiplication and division as a calculator for ingredients calculation or total dose calculation and so on.
 
 ### 拡張Clark式とは - What's the extended Clark's rule?
