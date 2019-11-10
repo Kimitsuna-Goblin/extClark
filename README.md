@@ -4,6 +4,17 @@
 <BR>
 This is a tool to estimate the optimum dosage amount for a child with his/her body weight via the extented Clark's rule.
 
+## オンラインツールとマニュアル - Online tool and Manual
+
+すぐにツールを使いたい方のために……
+<BR>
+For quickly access to the tool...
+  <BR>
++ オンラインツールは[こちら](https://kimitsuna-goblin.github.io/extClark/extClark.html)
++ 簡易マニュアルは[こちら](https://github.com/Kimitsuna-Goblin/extClark-Doc/blob/master/%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E7%B0%A1%E6%98%93%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB.pdf)
+* [Here](https://kimitsuna-goblin.github.io/extClark/extClark.html) is the online tool
+* [Here](https://github.com/Kimitsuna-Goblin/extClark-Doc/blob/master/%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E7%B0%A1%E6%98%93%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB.pdf) is a simple manual
+
 ## 説明 - Description
 
 ### ファイル - Files
