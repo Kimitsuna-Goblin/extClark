@@ -99,6 +99,14 @@ with analysing data of body measurements of the target patient's country or race
 [linkref_j]: http://jspe.umin.jp/medical/taikaku.html "日本人小児の体格の評価"
 [linkref_e]: http://jspe.umin.jp/eng/index.html "The Japanese Society for Pediatric Endocrinology"
 
+## マニュアル - Manuals
+
+現在、正式なユーザーマニュアルはまだできておりません。
+[簡易マニュアル](https://github.com/Kimitsuna-Goblin/extClark-Doc/blob/master/%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E7%B0%A1%E6%98%93%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB.pdf) (日本語のみ) が [extClark-Doc](https://github.com/Kimitsuna-Goblin/extClark-Doc) リポジトリにありますのでご参考に。
+<BR>
+We have not created the full user manual yet.
+But you can find [a simple manual](https://github.com/Kimitsuna-Goblin/extClark-Doc/blob/master/%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E7%B0%A1%E6%98%93%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB.pdf) (Japanese only) at the [extClark-Doc](https://github.com/Kimitsuna-Goblin/extClark-Doc) lipository.
+
 ## 使用方法 - Usage
 
 本ツールは、電卓と同じような感覚で、直感的に操作できます。
