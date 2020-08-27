@@ -7,7 +7,7 @@
 /**
  *	@file		extClark.js
  *	@brief		小児薬用量計算ツール (拡張Clark式) JavaScriptファイル
- *	@version	1.0.1
+ *	@version	1.0.2
  */
 
 ////////////////////////////////////////////////////////////////////////
@@ -752,10 +752,10 @@ function setValueText( value )
 /**
  *	端数を四捨五入して、指定された小数点以下桁数に数値を整形する
  *	@param	value			整形対象の数値
- *	@param	underPoint		小数第何位までに整形するか (0以上の数値を指定すること)
+ *	@param	underPoint		小数第何位までに整形するか (0以上の数値を指定すること) (省略時: 0)
  *	@return	整形した数値 (文字列)
  */
-function formatDecimal( value, underPoint )
+function formatDecimal( value, underPoint = 0 )
 {
 	var formated = '';								//	整形した数値
 	var valueString = String( value );				//	対象数値の小数表現文字列化
