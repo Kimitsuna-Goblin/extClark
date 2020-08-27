@@ -7,7 +7,7 @@
 /**
  *	@file		extClark.js
  *	@brief		小児薬用量計算ツール (拡張Clark式) JavaScriptファイル
- *	@version	1.0.2
+ *	@version	1.0.3
  */
 
 ////////////////////////////////////////////////////////////////////////
@@ -757,7 +757,7 @@ function setValueText( value )
  */
 function formatDecimal( value, underPoint = 0 )
 {
-	var formated = '';								//	整形した数値
+	var formatted = '';								//	整形した数値
 	var valueString = String( value );				//	対象数値の小数表現文字列化
 	var valuePoint = ( valueString.indexOf( '.' ) > 0 ) ? valueString.indexOf( '.' ) : valueString.length;
 													//	文字列化した数値の小数点位置
@@ -847,15 +847,15 @@ function formatDecimal( value, underPoint = 0 )
 	//	小数点を入れて整形
 	if ( underPoint <= 0 )
 	{
-		formated = rounded.substring( 0, valuePoint );
+		formatted = rounded.substring( 0, valuePoint );
 	}
 	else
 	{
-		formated = rounded.substring( 0, valuePoint )
+		formatted = rounded.substring( 0, valuePoint )
 						+ '.' + rounded.substring( valuePoint, valuePoint + underPoint );
 	}
 
-	return formated;
+	return formatted;
 }
 
 /**
