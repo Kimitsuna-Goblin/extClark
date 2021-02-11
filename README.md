@@ -245,7 +245,7 @@ the [specification](https://github.com/Kimitsuna-Goblin/extClark-Doc/blob/master
 But when you don't update the [master](https://github.com/Kimitsuna-Goblin/extClark) and use or distribute your updated tool by your own responsibility,
 please don't update the [master of the documents](https://github.com/Kimitsuna-Goblin/extClark-Doc).
 
-## ライセンス - Licence
+## ライセンス - License
 
 [MIT](https://github.com/Kimitsuna-Goblin/extClark/blob/master/LICENSE)
 
